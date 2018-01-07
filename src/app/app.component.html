@@ -1,27 +1,36 @@
-<div class="container">
-    <ngb-tabset>
-      <ngb-tab title="Simple">
-        <template ngbTabContent>
-          <p>This is the content of the first tab!</p>
-          <ngb-alert [dismissible]="false">
-            <strong>Warning!</strong> This is an alert!
-          </ngb-alert>
-        </template>
-      </ngb-tab>
-      <ngb-tab>
-        <template ngbTabTitle><b>Fancy</b> title</template>
-        <template ngbTabContent>
-          <p>This is the content of the second tab!</p>
-          <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
-          <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
-          <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
-          <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
-        </template>
-      </ngb-tab>
-      <ngb-tab title="Disabled" [disabled]="true">
-        <template ngbTabContent>
-          <p>This tab is disabled</p>
-        </template>
-      </ngb-tab>
-    </ngb-tabset>
-  </div>
+<!--Main Navigation-->
+<header>
+  
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-default scrolling-navbar">
+          <a class="navbar-brand" href="#"><strong>CryptoCards</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Collection</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Cards</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav nav-flex-icons">
+                  <li class="nav-item">
+                      <a class="nav-link">Signout</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link">Siginin</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  
+  </header>
+  <!--Main Navigation-->
